@@ -9,9 +9,6 @@ import yfinance as yf
 # Graphing / Visualization 
 import plotly.graph_objs as go
 
-# Connect to the Yahoo Finance stock API 
-yf.pdr_override()
-
 # Specify the stock you want to get data for
 stock=input("Enter a stock symbol: ")
 print(stock)
