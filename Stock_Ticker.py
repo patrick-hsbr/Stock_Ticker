@@ -9,24 +9,18 @@ import yfinance as yf
 # Graphing / Visualization 
 import plotly.graph_objs as go
 
+# Web App Framework
+from flask import Flask, render_template
+
 # Specify the stock you want to get data for
 stock=input("Enter a stock symbol: ")
 print(stock)
-
-'''
-ticker: case insensitive ticker of the desired stock/bond
-start_date: date you want the data to start from (mm/dd/yyyy)
-end_date: date you want the data to end (mm/dd/yyyy)
-index_as_date: {True, False}. Default is true. If true then the dates of the records are set as the index, else they are returned as a separate column.
-interval: {“1d”, “1wk”, “1mo”}. Refers to the interval to sample the data: “1d”= daily, “1wk”= weekly, “1mo”=monthly.
-'''
 
 # Import the data frame (df) from yahoo finance using the specified stock as the ticker symbol
 df = yf.download(tickers=stock,period='1d',interval='1m')
 
 # Print the data we have requested
 print(df)
-
 
 # Visualize the data 
 fig=go.Figure()
