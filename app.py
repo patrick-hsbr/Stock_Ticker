@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
 import yfinance as yf
 import plotly.graph_objs as go
 import pandas as pd
@@ -7,6 +7,13 @@ import pandas as pd
 app = Flask(__name__)
 
 @app.route("/")
+def index():
+    flash("Whats the ticker you are looking for?")
+    return render_template("index.html")
+
+
+'''
+@app.route("/result")
 def index():
     # Retrieve data from Yahoo Finance
     data = yf.download("GC=F")
@@ -70,3 +77,4 @@ def index():
     # Convert the Plotly figure to HTML and pass it to the template
     chart = fig.to_html(full_html=False)
     return render_template("index.html", chart=chart)
+'''

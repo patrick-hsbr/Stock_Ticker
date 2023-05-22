@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>The Stock Ticker Chart</title>
-    <style>
-        body {
-            background-color: #202020;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-        }
-        .chart-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 200vh;
-        }
-        .chart {
-            max-width: 500%;
-            width: 300vh;
-        }
-    </style>
-</head>
-<body>
-    <div class="chart-container">
-        <div class="chart">
-            {{ chart|safe }}
-        </div>
-    </div>
-</body>
+  <head>
+    <title>Input Field Example</title>
+  </head>
+  <body>
+    <form method="POST" action="/results">
+      <label for="input-field">Enter a stock ticker symbol:</label>
+      <input type="text" id="input-field" name="ticker" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
