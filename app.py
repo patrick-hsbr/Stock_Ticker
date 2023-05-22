@@ -27,7 +27,7 @@ def index():
         title={
             'text': "Gold in USD per troy ounce (1 troy ounce = 31.1034768 grams)",
             'font': {
-                'size': 22,
+                'size': 18,
                 'color': '#B3B3B3'
             }
         },
