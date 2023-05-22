@@ -3,7 +3,6 @@ import yfinance as yf
 import plotly.graph_objs as go
 import pandas as pd
 
-
 app = Flask(__name__)
 
 @app.route("/")
