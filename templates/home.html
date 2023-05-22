@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Stock Ticker Home</title>
+    <style>
+        body {
+            background-color: #202020;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        } 
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        form {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>Please enter a stock code/ ticker symbol:</p>
+    <form method="POST" action="/index">
+        <input name="text">
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
