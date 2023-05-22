@@ -3,7 +3,6 @@ import yfinance as yf
 import plotly.graph_objs as go
 import pandas as pd
 
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -25,9 +24,9 @@ def index():
     # Set the chart layout with some style and a range slider
     fig.update_layout(
         title={
-            'text': "Gold in USD",
+            'text': "Gold in USD per troy ounce (1 troy ounce = 31.1034768 grams)",
             'font': {
-                'size': 22,
+                'size': 18,
                 'color': '#B3B3B3'
             }
         },
