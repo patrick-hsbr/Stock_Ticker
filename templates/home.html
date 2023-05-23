@@ -69,7 +69,7 @@
 <div>
     <h1>Please enter a ticker</h1>
     <form method="POST" action="/response">
-        <input name="ticker" id="tickerInput" autocomplete="off" list="tickerList" pattern=".{4,}" title="Please enter at least 4 characters" required>
+        <input name="ticker" id="tickerInput" autocomplete="off" list="tickerList" pattern=".{2,}" title="Please enter at least 2 characters" required>
         <datalist id="tickerList">
             {% for ticker, company in ticker_data.items() %}
             <option value="{{ company }} - {{ ticker }}"></option>
