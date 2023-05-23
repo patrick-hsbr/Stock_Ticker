@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-tickers_file_path = '/home/TheStockTicker/mysite/tickers.txt'
+tickers_file_path = '/Users\patri\Sandbox\Stock_Ticker/tickers.txt'
 
 # Load ticker symbols and company names from tickers.txt
 def load_tickers():
@@ -38,7 +38,7 @@ def response():
 
         # error handling for user inputs with empty API response
         if data.empty:
-            return "Error: No data available for the specified code/ ticker symbol."
+            return "Error: No data available for the specified ticker symbol."
 
         # retrieving company information "longName" for specified stock code/ ticker symbol
         yticker = yf.Ticker(processed_input)
@@ -58,7 +58,7 @@ def response():
         # Set the chart layout with some style and a range slider
         fig.update_layout(
             title={
-                'text': company_name + " in USD",
+                'text': company_name,
                 'font': {
                     'size': 22,
                     'color': '#B3B3B3'
@@ -78,7 +78,7 @@ def response():
                         dict(count=1, label="1y", step="year", stepmode="backward"),
                         dict(step="all")
                     ]),
-                    bgcolor="#404040"
+                    bgcolor="#27374D"
                 ),
                 rangeslider=dict(
                     visible=True,
@@ -92,8 +92,8 @@ def response():
                 showgrid=False
             ),
             margin=dict(l=60, r=60, t=100, b=40),
-            plot_bgcolor='#202020',
-            paper_bgcolor='#202020',
+            plot_bgcolor='#27374D',
+            paper_bgcolor='#27374D',
             font=dict(color='#B3B3B3')
         )
 

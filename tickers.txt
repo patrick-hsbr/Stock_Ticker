@@ -67,9 +67,6 @@ ECO.VI,ECO.VI | Austria
 ENB.TO,Enbridge Inc. | Canada
 EBS.VI,Erste Group Bank AG | Austria
 ^STOXX50E,ESTX 50 PR.EUR | Index
-EURCHF=X,EUR/CHF | Currency
-EURGBP=X,EUR/GBP | Currency
-EURUSD=X,EUR/USD | Currency
 ^N100,Euronext 100 Index | Index
 EVN.VI,EVN AG | Austria
 FACC.VI,FACC AG | Austria
