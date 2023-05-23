@@ -24,7 +24,6 @@ AZO,AutoZone Inc. | USA
 BANF,BancFirst Corporation | USA
 BBD,Banco Bradesco S.A. | USA
 BMA,Banco Macro S.A. | USA
-BTS.VI,Bank für Tirol und Vorarlberg Aktiengesellsch | Austria
 BAC,Bank of America Corporation | USA
 BCS,Barclays PLC | USA
 ^BFX,BEL 20 | Index

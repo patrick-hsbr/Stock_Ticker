@@ -23,6 +23,11 @@ def home():
     ticker_data = load_tickers()
     return render_template("home.html", ticker_data=ticker_data)
 
+# Error page
+@app.route("/error")
+def error():
+    return render_template("error.html")
+
 # result page with chart
 @app.route("/response", methods=["POST"])
 def response():
@@ -38,7 +43,7 @@ def response():
 
         # error handling for user inputs with empty API response
         if data.empty:
-            return "Error: No data available for the specified ticker symbol."
+            return redirect("/error")
 
         # retrieving company information "longName" for specified stock code/ ticker symbol
         yticker = yf.Ticker(processed_input)
