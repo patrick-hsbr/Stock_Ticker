@@ -3,8 +3,6 @@ AMD,Advanced Micro Devices Inc. | USA
 AGR.VI,AGRANA Beteiligungs-Aktiengesellschaft | Austria
 AC.TO,Air Canada | Canada
 ALB,Albemarle Corporation | USA
-^AORD,ALL ORDINARIES | Index
-ALBKY,Alpha Services and Holdings S.A. | USA
 GOOGL,Alphabet Inc. | USA
 AMAG.VI,AMAG Austria Metall AG | Austria
 AMZN,Amazon.com Inc. | USA
