@@ -3,8 +3,6 @@ AMD,Advanced Micro Devices Inc. | USA
 AGR.VI,AGRANA Beteiligungs-Aktiengesellschaft | Austria
 AC.TO,Air Canada | Canada
 ALB,Albemarle Corporation | USA
-^AORD,ALL ORDINARIES | Index
-ALBKY,Alpha Services and Holdings S.A. | USA
 GOOGL,Alphabet Inc. | USA
 AMAG.VI,AMAG Austria Metall AG | Austria
 AMZN,Amazon.com Inc. | USA
@@ -24,7 +22,6 @@ AZO,AutoZone Inc. | USA
 BANF,BancFirst Corporation | USA
 BBD,Banco Bradesco S.A. | USA
 BMA,Banco Macro S.A. | USA
-BTS.VI,Bank für Tirol und Vorarlberg Aktiengesellsch | Austria
 BAC,Bank of America Corporation | USA
 BCS,Barclays PLC | USA
 ^BFX,BEL 20 | Index
@@ -67,9 +64,6 @@ ECO.VI,ECO.VI | Austria
 ENB.TO,Enbridge Inc. | Canada
 EBS.VI,Erste Group Bank AG | Austria
 ^STOXX50E,ESTX 50 PR.EUR | Index
-EURCHF=X,EUR/CHF | Currency
-EURGBP=X,EUR/GBP | Currency
-EURUSD=X,EUR/USD | Currency
 ^N100,Euronext 100 Index | Index
 EVN.VI,EVN AG | Austria
 FACC.VI,FACC AG | Austria
