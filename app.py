@@ -44,7 +44,7 @@ def response():
 
         # redirect the user to the error page in case the api response based on the stock ticker is empty
         if data.empty:
-            return redirect("/error")
+            return ("/error")
 
         # retrieving the company information "longName" for the sent ticker symbol and set as variable ticker_long_name
         yticker = yf.Ticker(processed_input)
@@ -70,7 +70,6 @@ def response():
                     'size': 22,
                     'color': '#B3B3B3'
                 }
-
             },
             # specify buttons for the user and map different time periods to them 
             xaxis=dict(

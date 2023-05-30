@@ -1,6 +1,6 @@
-# Stock Ticker
+# The Stock Ticker
 
-This project builds a visualization of stock data retrieved from the public available Yahoo Finance API. The visualization will be done using the package plotly and via the package flaske the application is hosted on [http://thestockticker.pythonanywhere.com/](http://thestockticker.pythonanywhere.com/).
+This project offers users the possibility to request stock data via the publicly available Yahoo Finance API and visualize the data in a candlestick chart using the plotly package. The application is hosted on [http://thestockticker.pythonanywhere.com/](http://thestockticker.pythonanywhere.com/) using the flask package.
 
 ## Instructions
 
