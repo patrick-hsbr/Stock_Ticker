@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import os
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "supergeheim"
 
 # path of text file containing all the tickers you want to show in the pull down select on the home 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -108,8 +109,8 @@ def response():
         
         # error message if input is invalid
         if processed_input not in ticker_data:
-            flash('No such ticker')
-            return redirect(url_for('home'))
+            flash("No data available for the specified ticker symbol.")
+            return redirect(url_for("home"))
 
         # retrieve data from yahoo finance with specified ticker symbol set as variable processed_input
         data = yf.download(processed_input)
@@ -121,14 +122,14 @@ def response():
             company_name = yticker.info["longName"]
             
         except:
-            flash('No such ticker')
-            return redirect(url_for('home'))
+            flash("No data available for the specified ticker symbol.")
+            return redirect(url_for("home"))
         
         # convert the Plotly figure to html and populate it on the response.hmtl page
         chart = build_chart(data, company_name)
         return render_template("response.html", chart=chart, ticker_data=ticker_data)
 
-    return redirect(url_for('home'))
+    return redirect(url_for("home"))
 
 if __name__ == "__main__":
     app.run()
